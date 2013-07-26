@@ -137,21 +137,5 @@ namespace SymbolSource.Server.Basic
             var count = helper.Count(GetNuGetFeedUrl(), new NetworkCredential("Test", "Test"));
             return Content(string.Format("OK - {0} package(s)", count));
         }
-
-        public ActionResult OpenWrapPushTest()
-        {
-            var helper = new Gateway.OpenWrap.Core.TestHelper();
-            using (var stream = GetType().Assembly.GetManifestResourceStream(GetType().Namespace + ".Packages.demolibrary.wrap"))
-                helper.Push(GetOpenWrapUrl(), new NetworkCredential("Test", "Test"), "Test", stream);
-
-            return Content("OK");
-        }
-
-        public ActionResult OpenWrapFeedTest()
-        {
-            var helper = new Gateway.OpenWrap.Core.TestHelper();
-            var count = helper.Count(GetOpenWrapUrl(), new NetworkCredential("Test", "Test"));
-            return Content(string.Format("OK - {0} package(s)", count));
-        }
     }
 }
