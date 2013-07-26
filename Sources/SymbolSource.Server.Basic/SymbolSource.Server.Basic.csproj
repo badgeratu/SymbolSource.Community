@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttributeRouting.cs" />
+    <Compile Include="BasicBackend.Cache.cs" />
     <Compile Include="BasicBackend.cs" />
     <Compile Include="BasicBackend.Download.cs" />
     <Compile Include="BasicBackend.Logging.cs" />

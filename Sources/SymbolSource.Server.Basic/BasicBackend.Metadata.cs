@@ -175,7 +175,10 @@ namespace SymbolSource.Server.Basic
             throw new NotImplementedException();
         }
 
-        public Version[] GetPackages(ref Repository repository, ref PackageFilter filter, string packageFormat, string projectId)
+        public Version[] GetPackages(ref Repository repository, ref PackageFilter filter, string packageFormat, string projectId) {
+            return GetPackagesFromCache(ref repository, ref filter, packageFormat, projectId);
+        }
+        private Version[] GetPackagesInternal(ref Repository repository, ref PackageFilter filter, string packageFormat, string projectId)
         {
             var repositoryCopy = repository;
 
