@@ -204,7 +204,7 @@ namespace SymbolSource.Server.Basic
                                                    PackageHash = GetPackageSHA512(GetPackagePathFromVersion(version, packageFormat)),
                                                })
                 )
-                .OrderByDescending(v => v.Name)
+                .OrderByDescending(v => System.Version.Parse(v.Name))
                 .ToArray();
 
             foreach(var version in versions)
