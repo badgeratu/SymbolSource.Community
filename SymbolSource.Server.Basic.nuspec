@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SymbolSource.Server.Basic</id>
-    <version>1.3.2</version>
+    <version>1.3.2.1</version>
     <authors>SymbolSource</authors>
     <owners>SymbolSource</owners>
     <projectUrl>http://www.symbolsource.org/Public/Blog/View/2012-03-13/Releasing_the_community_edition_of_SymbolSource</projectUrl>
@@ -36,14 +36,9 @@
     <file src="Sources\SymbolSource.Server.Basic\bin\Release\SymbolSource.Server.Basic.*" target="lib\net40" />
     <file src="Sources\SymbolSource.Gateway.Core\bin\Release\SymbolSource.Gateway.Core.*" target="lib\net40" />
     <file src="Sources\SymbolSource.Gateway.NuGet.Core\bin\Release\SymbolSource.Gateway.NuGet.Core.*" target="lib\net40" />
-    <file src="Sources\SymbolSource.Gateway.OpenWrap.Core\bin\Release\SymbolSource.Gateway.OpenWrap.Core.*" target="lib\net40" />
-    <file src="Sources\SymbolSource.Gateway.OpenWrap.Core\bin\Release\OpenWrap.dll" target="lib\net40" />
-    <file src="Sources\SymbolSource.Gateway.OpenWrap.Core\bin\Release\OpenRasta.Client.dll" target="lib\net40" />
-    <file src="Sources\SymbolSource.Gateway.OpenWrap.Core\bin\Release\OpenFileSystem.dll" target="lib\net40" />
     <file src="Sources\SymbolSource.Gateway.WinDbg.Core\bin\Release\SymbolSource.Gateway.WinDbg.Core.*" target="lib\net40" />
     <file src="Sources\SymbolSource.Processing.Basic\bin\Release\SymbolSource.Processing.Basic.*" target="lib\net40" />
     <file src="Sources\SymbolSource.Server.Management.Client\bin\Release\SymbolSource.Server.Management.Client.*" target="lib\net40" exclude="**\*.config" />
-
     <file src="Sources\**\*.cs" target="src" />
     
     <file src="Sources\SymbolSource.Server.Basic.Host\Data\Web.config" target="content\Data\Web.config" />
@@ -52,5 +47,5 @@
     <file src="Sources\SymbolSource.Server.Basic.Host\Views\Home\Diagnostics.cshtml" target="content\Views\Home\Diagnostics.cshtml" />
     <file src="Sources\SymbolSource.Server.Basic.Host\favicon.png" target="content\favicon.png" />
     <file src="Sources\SymbolSource.Server.Basic.Host\Web.config.transform" target="content\Web.config.transform" />
-  </files>
+</files>
 </package>
