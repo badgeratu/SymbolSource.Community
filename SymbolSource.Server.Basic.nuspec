@@ -9,7 +9,8 @@
     <iconUrl>http://www.symbolsource.org/Content/logos/symbolsource.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
-      Symbol and source server counterpart to NuGet.Server. Can also host NuGet and OpenWrap packages on its own.
+      Symbol and source server counterpart to NuGet.Server. Can also host NuGet packages on its own.
+      Includes custom metadata caching feature and a bugfix over v1.3.2.
     </description>
     <copyright>Copyright SymbolSource 2012</copyright>
     <tags>SymbolSource Debugging Debug Symbols Source Server PDB NuGet SrcSrv</tags>
